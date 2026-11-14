@@ -219,7 +219,7 @@ function verHorario() {
 }
 
 async function carregarDatasCheias() {
-  if (!CONFIG.planilhaUrl) return;
+  if (!https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec) return;
   try {
     const { datas } = await (await fetch(CONFIG.planilhaUrl)).json();
     datasCheias = new Set(Object.keys(datas).filter(d => datas[d] >= CONFIG.limiteDia));
