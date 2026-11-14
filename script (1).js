@@ -221,7 +221,7 @@ function verHorario() {
 async function carregarDatasCheias() {
   if (!https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec) return;
   try {
-    const { datas } = await (await fetch(CONFIG.planilhaUrl)).json();
+    const { datas } = await (await fetch(https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec)).json();
     datasCheias = new Set(Object.keys(datas).filter(d => datas[d] >= CONFIG.limiteDia));
   } catch {}
 }
@@ -275,8 +275,8 @@ $("#formPedido").addEventListener("submit", e => {
     subtotal: c.sub, desconto: c.desc, frete: c.f, total: c.total,
     sinal: Math.round(c.total * CONFIG.pix.sinal * 100) / 100
   };
-  if (CONFIG.planilhaUrl)
-    fetch(CONFIG.planilhaUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" },
+  if (https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec)
+    fetch(https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" },
       body: JSON.stringify({ ...pedido, itens: pedido.itens.join("; ") }) }).catch(() => {});
   try { localStorage.setItem(ULT, JSON.stringify(cart)); } catch {}
   mostrarPix();
