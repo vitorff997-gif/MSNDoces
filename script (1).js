@@ -31,6 +31,7 @@ const PRODUTOS = [
   { nome: "Trufa de Maracujá", categoria: "Trufas", preco: 6.0, unidade: "unidade", minimo: 6, imagem: "", bio: "Ganache de chocolate branco com maracujá, casquinha crocante." },
   { nome: "Trufa de Chocolate Meio Amargo", categoria: "Trufas", preco: 6.0, unidade: "unidade", minimo: 6, imagem: "", bio: "Recheio intenso de cacau 55% com cobertura fina." },
   { nome: "Bolo no Pote Ninho com Morango", categoria: "Bolos no pote", preco: 14.0, unidade: "pote", minimo: 1, imagem: "", bio: "Massa fofinha, creme de leite ninho e morangos." },
+  { nome: "Bolo de Pote de Chocolate", categoria: "Bolos no pote", preco: 10.0, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de chocolate fofinho e cremoso, servido em pote." },
   { nome: "Caixa Presente", categoria: "Presentes", preco: 69.0, unidade: "caixa com 12", minimo: 1, imagem: "", bio: "Seleção de doces da casa em caixa para presentear." }
 ];
 
@@ -219,9 +220,9 @@ function verHorario() {
 }
 
 async function carregarDatasCheias() {
-  if (!https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec) return;
+  if (!CONFIG.planilhaUrl) return;
   try {
-    const { datas } = await (await fetch(https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec)).json();
+    const { datas } = await (await fetch(CONFIG.planilhaUrl)).json();
     datasCheias = new Set(Object.keys(datas).filter(d => datas[d] >= CONFIG.limiteDia));
   } catch {}
 }
@@ -275,8 +276,8 @@ $("#formPedido").addEventListener("submit", e => {
     subtotal: c.sub, desconto: c.desc, frete: c.f, total: c.total,
     sinal: Math.round(c.total * CONFIG.pix.sinal * 100) / 100
   };
-  if (https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec)
-    fetch(https://script.google.com/macros/s/AKfycbxERRSQ2Z5QWoxbD0N9IRXxiyaozCRGoMFZqg3axtKouYQ0i3Rrl7ycH9BtYJZB_TQXsA/exec, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" },
+  if (CONFIG.planilhaUrl)
+    fetch(CONFIG.planilhaUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" },
       body: JSON.stringify({ ...pedido, itens: pedido.itens.join("; ") }) }).catch(() => {});
   try { localStorage.setItem(ULT, JSON.stringify(cart)); } catch {}
   mostrarPix();
@@ -310,5 +311,7 @@ $("#jaPaguei").addEventListener("click", () => {
   desenharProdutos();
   desenharCarrinho();
   verHorario();
+  carregarDatasCheias();
+})();
   carregarDatasCheias();
 })();
