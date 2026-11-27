@@ -2,15 +2,15 @@
    1) CONFIGURAÇÕES — edite aqui
    ========================================================== */
 const CONFIG = {
-  whatsapp: "5538900000000",   // seu número com 55 + DDD, só números
+  whatsapp: "5538991638118",   // seu número com 55 + DDD, só números
   loja: "MSN Doces Gourmet",
   diasAntecedencia: 2,         // antecedência mínima para encomendas
-  horario: { abre: 8, fecha: 20 },              // horário de atendimento (horas)
+  horario: { abre: 7, fecha: 20 },              // horário de atendimento (horas)
   diasFechados: [0],                            // 0 = domingo, 1 = segunda...
   datasBloqueadas: ["2026-12-25", "2027-01-01"], // AAAA-MM-DD (feriados, folgas)
   limiteDia: 10,               // máx. de pedidos por data (precisa da planilha)
-  pix: { chave: "SUA-CHAVE-PIX", nome: "MSN DOCES GOURMET", cidade: "MONTES CLAROS", sinal: 0.5 }, // sem acentos, maiúsculas
-  frete: { padrao: 8, bairros: { "Centro": 5, "Ibituruna": 10 } },  // R$ por bairro
+  pix: { chave: "38991638118", nome: "MSN DOCES GOURMET", cidade: "MONTES CLAROS", sinal: 0.5 }, // sem acentos, maiúsculas
+  frete: { padrao: 6, bairros: { "Centro": 4, "Ibituruna": 8 } },  // R$ por bairro
   cupons: { MSN10: 0.10, BEMVINDO: 0.05 },      // código: desconto (0.10 = 10%)
   planilhaUrl: ""              // URL do Apps Script (veja apps-script/Code.gs)
 };
