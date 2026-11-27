@@ -29,7 +29,7 @@ const PRODUTOS = [
   { nome: "Brigadeiro Gourmet", categoria: "Brigadeiros", preco: 4.5, unidade: "unidade", minimo: 10, imagem: "", bio: "Chocolate belga cremoso, enrolado no granulado fino." },
   { nome: "Beijinho de Coco", categoria: "Brigadeiros", preco: 4.0, unidade: "unidade", minimo: 10, imagem: "", bio: "Coco fresco, leite condensado e cravo por cima." },
   { nome: "Bolo no Pote Ninho", categoria: "Bolos no pote", preco: 12.0, unidade: "pote", minimo: 1, imagem: "", bio: "Massa fofinha, creme de leite ninho." },
-  { nome: "Bolo de Pote de Chocolate", categoria: "Bolos no pote", preco: 10.0, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de chocolate fofinho e cremoso, servido em pote." },
+  { nome: "Bolo de Pote de Chocolate", categoria: "Bolos no pote", preco: 10.0, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de chocolate fofinho e cremoso, servido em pote." },]
 
 
 /* ==========================================================
