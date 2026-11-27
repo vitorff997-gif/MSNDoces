@@ -26,11 +26,15 @@ const CONFIG = {
    - bio:       descrição curta do produto
    ========================================================== */
 const PRODUTOS = [
-  { nome: "Brigadeiro Gourmet", categoria: "Brigadeiros", preco: 1.99, unidade: "unidade", minimo: 4, imagem: "", bio: "Chocolate belga cremoso, enrolado no granulado fino." },
+  { nome: "Brigadeiro Gourmet", categoria: "Brigadeiros", preco: 1.99, unidade: "unidade", minimo: 4, imagem: "", bio: "Chocolate cremoso, enrolado no granulado fino." },
   { nome: "Beijinho de Coco", categoria: "Brigadeiros", preco: 1.99, unidade: "unidade", minimo: 4, imagem: "", bio: "Coco fresco, leite condensado e cravo por cima." },
   { nome: "Bolo de Pote Ninho", categoria: "Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Massa fofinha, creme de leite ninho." },
   { nome: "Bolo de Pote Brigadeiro", categoria: "Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de chocolate fofinho e cremoso, servido em pote." },
-  { nome: "Bolo de Pote Paçoca", categoria:"Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de brigadeiro de paçoca, servido no pote "},   ]
+  { nome: "Bolo de Pote Paçoca", categoria:"Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de brigadeiro de paçoca, servido no pote "}, 
+  { nome: "Banoffee", categoria:"Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio "Banoffe é um delicioso bolo com doce de leite e banana"},
+  { nome: "Bolo de pote Mousse de Limão", categoria: "Bolo no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de Mousse de limão, servido no pote},
+  { nome: "Bolo de pote Mousse de Maracuja", categoria: "Bolo no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de Mousse de maracuja, servido no pote},
+ ]
      
 /* ==========================================================
    3) CÓDIGO DO SITE — não precisa mexer daqui para baixo
