@@ -28,12 +28,9 @@ const CONFIG = {
 const PRODUTOS = [
   { nome: "Brigadeiro Gourmet", categoria: "Brigadeiros", preco: 4.5, unidade: "unidade", minimo: 10, imagem: "", bio: "Chocolate belga cremoso, enrolado no granulado fino." },
   { nome: "Beijinho de Coco", categoria: "Brigadeiros", preco: 4.0, unidade: "unidade", minimo: 10, imagem: "", bio: "Coco fresco, leite condensado e cravo por cima." },
-  { nome: "Trufa de Maracujá", categoria: "Trufas", preco: 6.0, unidade: "unidade", minimo: 6, imagem: "", bio: "Ganache de chocolate branco com maracujá, casquinha crocante." },
-  { nome: "Trufa de Chocolate Meio Amargo", categoria: "Trufas", preco: 6.0, unidade: "unidade", minimo: 6, imagem: "", bio: "Recheio intenso de cacau 55% com cobertura fina." },
-  { nome: "Bolo no Pote Ninho com Morango", categoria: "Bolos no pote", preco: 14.0, unidade: "pote", minimo: 1, imagem: "", bio: "Massa fofinha, creme de leite ninho e morangos." },
+  { nome: "Bolo no Pote Ninho", categoria: "Bolos no pote", preco: 12.0, unidade: "pote", minimo: 1, imagem: "", bio: "Massa fofinha, creme de leite ninho." },
   { nome: "Bolo de Pote de Chocolate", categoria: "Bolos no pote", preco: 10.0, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de chocolate fofinho e cremoso, servido em pote." },
-  { nome: "Caixa Presente", categoria: "Presentes", preco: 69.0, unidade: "caixa com 12", minimo: 1, imagem: "", bio: "Seleção de doces da casa em caixa para presentear." }
-];
+
 
 /* ==========================================================
    3) CÓDIGO DO SITE — não precisa mexer daqui para baixo
