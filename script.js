@@ -31,7 +31,7 @@ const PRODUTOS = [
   { nome: "Bolo de Pote Ninho", categoria: "Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Massa fofinha, creme de leite ninho." },
   { nome: "Bolo de Pote Brigadeiro", categoria: "Bolos no pote", preco: 11.99, unidade: "pote", minimo: 1, imagem: "", bio: "Bolo de chocolate fofinho e cremoso, servido em pote." },
   {nome: "Bolo de Pote Paçoca", categoria:"Bolos no pote", preço 11.99, unidade: "pote", minimo: 1, imagem "", bio: "Bolo de brigadeiro de paçoca, servido no pote "
-
+]
 /* ==========================================================
    3) CÓDIGO DO SITE — não precisa mexer daqui para baixo
    ========================================================== */
